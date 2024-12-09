@@ -34,15 +34,13 @@
     </style>
   </head>
   <body>
-    <main class="min-h-screen">
-
+    <main class="min-h-screen relative">
       <!-- Hero section -->
       <section
-        class="bg-[url('./images/mobile/image-hero.jpg')] bg-cover px-6 pt-10 pb-56"
+        class="bg-[url('./images/mobile/image-hero.jpg')] bg-cover px-6 pt-8 pb-56"
       >
-
         <!-- Navbar section -->
-        <div class="flex justify-between align-center">
+        <div class="flex items-center justify-between">
           <img src="./images/logo.svg" alt="" class="h-7 md:h-8" />
           <nav class="text-white space-x-3 hidden md:block">
             <a href="#">About</a>
@@ -51,15 +49,42 @@
             <a href="#">Products</a>
             <a href="#">Support</a>
           </nav>
-          <div class="block md:hidden pt-1">
-            <button>
-              <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
-                <g fill="#FFF" fill-rule="evenodd">
-                  <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
-                </g>
-              </svg>
+          <div class="">
+            <button class="hamburger cursor-pointer group">
+              <!-- <img src="./images/icon-hamburger.svg" alt="" /> -->
+              <div class="grid justify-items-center gap-1.5 pb-4">
+                <span
+                  class="transition duration-300 ease-out group-hover:rotate-45 group-hover:translate-y-2 w-7 rounded-md h-0.5 bg-white"
+                ></span>
+                <span
+                  class="transition duration-300 ease-out group-hover:w-0 rounded-md w-7 h-0.5 bg-white"
+                ></span>
+                <span
+                  class="transition duration-300 ease-out group-hover:-rotate-45 group-hover:-translate-y-2 rounded-md w-7 h-0.5 bg-white"
+                ></span>
+              </div>
             </button>
           </div>
+        </div>
+        <!-- Mobile navigation -->
+        <div
+          class="mobileNav hidden absolute top-0 left-0 w-full h-full bg-black px-6 pt-10"
+        >
+          <div class="flex justify-between">
+            <img src="./images/logo.svg" alt="" class="h-7" />
+            <button class="close cursor-pointer group">
+              <img src="./images/icon-close.svg" alt="" />
+            </button>
+          </div>
+          <nav
+            class="text-white space-y-6 text-3xl flex flex-col mt-40 font-['Josefin Sans'] font-light uppercase"
+          >
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Events</a>
+            <a href="#">Products</a>
+            <a href="#">Support</a>
+          </nav>
         </div>
 
         <!-- Hero content -->
@@ -70,80 +95,139 @@
         </div>
       </section>
 
-
       <!-- Description section -->
-      <section  class="px-6 mt-24">
+      <section class="px-6 mt-24">
         <!-- Main Image -->
-         <img src="./images/mobile/image-interactive.jpg" alt="Wannabe T-rex man wearing a vr headset ">
-         <!-- Heading -->
-          <h2 class="mt-8 text-center tracking-normal text-4xl font-['Josefin Sans'] uppercase font-light ">The leader in interactive VR</h2>
-          <!-- Description -->
-           <p class="mt-4 px-2 text-center font-['Alata'] font-normal text-[#8c8c8c]">Founded in 2011, Loopstudios has been producing
-            world-class virtual reality projects for some of the best companies around
-            the globe. Our award-winning creations have transformed businesses through
-            digital experiences that bind to their brand.</p>
+        <img
+          src="./images/mobile/image-interactive.jpg"
+          alt="Wannabe T-rex man wearing a vr headset "
+        />
+        <!-- Heading -->
+        <h2
+          class="mt-8 text-center tracking-normal text-4xl font-['Josefin Sans'] uppercase font-light"
+        >
+          The leader in interactive VR
+        </h2>
+        <!-- Description -->
+        <p
+          class="mt-4 px-2 text-center font-['Alata'] font-normal text-[#8c8c8c]"
+        >
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
       </section>
       <!-- Our Creations section -->
       <section class="px-6">
-        <h2 class="mt-14 text-center tracking-normal text-4xl font-['Josefin Sans'] uppercase font-light ">Our Creations</h2>
+        <h2
+          class="mt-14 text-center tracking-normal text-4xl font-['Josefin Sans'] uppercase font-light"
+        >
+          Our Creations
+        </h2>
         <!-- Image gallery -->
         <div class="mt-10 grid grid-cols-1 gap-5 overflow-hidden font-light">
-          <div class="relative font-['Josefin Sans'] ">
-            <img src="./images/mobile/image-deep-earth.jpg" alt="">
-            <div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white">DEEP<br> EARTH</span>
-          </div> 
+          <div class="relative font-['Josefin Sans']">
+            <img src="./images/mobile/image-deep-earth.jpg" alt="" />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+            ></div>
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+              >DEEP<br />
+              EARTH</span
+            >
+          </div>
           <div class="relative">
-            <img src="./images/mobile/image-night-arcade.jpg" alt="">
-            <div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 font-light text-white">NIGHT<br> ARCADE</span>
-          </div> 
+            <img src="./images/mobile/image-night-arcade.jpg" alt="" />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+            ></div>
+            <span
+              class="absolute left-5 bottom-5 text-2xl leading-6 font-light text-white"
+              >NIGHT<br />
+              ARCADE</span
+            >
+          </div>
           <div class="relative">
-            <img src="./images/mobile/image-soccer-team.jpg" alt="">
-            <div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white">SOCCER<br> TEAM VR</span>
-          </div> 
+            <img src="./images/mobile/image-soccer-team.jpg" alt="" />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+            ></div>
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+              >SOCCER<br />
+              TEAM VR</span
+            >
+          </div>
           <div class="relative">
-            <img src="./images/mobile/image-grid.jpg" alt="">
-            <div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white">THE<br> GRID</span>
-          </div> 
+            <img src="./images/mobile/image-grid.jpg" alt="" />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+            ></div>
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+              >THE<br />
+              GRID</span
+            >
+          </div>
           <div class="relative">
-            <img src="./images/mobile/image-from-above.jpg" alt="">
-            <div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"></div>
+            <img src="./images/mobile/image-from-above.jpg" alt="" />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+            ></div>
 
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white">FROM UP<br> ABOVE VR</span>
-          </div> 
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+              >FROM UP<br />
+              ABOVE VR</span
+            >
+          </div>
           <div class="relative">
-            <img src="./images/mobile/image-pocket-borealis.jpg" alt="">
-            <div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white">POCKET<br> BOREALIS</span>
-          </div> 
+            <img src="./images/mobile/image-pocket-borealis.jpg" alt="" />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+            ></div>
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+              >POCKET<br />
+              BOREALIS</span
+            >
+          </div>
           <div class="relative">
-            <img src="./images/mobile/image-curiosity.jpg" alt="">
-            <div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white">THE<br> CURIOSITY</span>
-          </div> 
+            <img src="./images/mobile/image-curiosity.jpg" alt="" />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+            ></div>
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+              >THE<br />
+              CURIOSITY</span
+            >
+          </div>
           <div class="relative">
-            <img src="./images/mobile/image-fisheye.jpg" alt="">
-            <div class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white">MAKE IT<br> FISHEYE</span>
-          </div> 
+            <img src="./images/mobile/image-fisheye.jpg" alt="" />
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+            ></div>
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+              >MAKE IT<br />
+              FISHEYE</span
+            >
+          </div>
         </div>
         <!-- Button -->
-         <button class="uppercase block mx-auto border font-medium border-black px-8 py-2 font-['Josefin Sans'] mt-6"
-          style="letter-spacing: 0.3em;"
-         >
+        <button
+          class="uppercase block mx-auto border font-medium border-black px-8 py-2 font-['Josefin Sans'] mt-6"
+          style="letter-spacing: 0.3em"
+        >
           See all
-         </button>
-      </section> 
+        </button>
+      </section>
       <!-- Footer section -->
-      <section class="font-['Alata'] font-normal mt-20 bg-black px-8 py-12 flex flex-col items-center justify-center gap-10">
-
+      <section
+        class="font-['Alata'] font-normal mt-20 bg-black px-8 py-12 flex flex-col items-center justify-center gap-10"
+      >
         <!-- Group1: logo and navlinks -->
         <div class="space-y-8">
           <img src="./images/logo.svg" alt="" class="h-7 md:h-8" />
-          <nav class="flex flex-col gap-4 items-center text-[rgba(255,255,255,0.90)]">
+          <nav
+            class="flex flex-col gap-4 items-center text-[rgba(255,255,255,0.90)]"
+          >
             <a href="#">About</a>
             <a href="#">Careers</a>
             <a href="#">Events</a>
@@ -154,12 +238,12 @@
         <!-- Group 2: social links and copyright statement -->
         <div class="space-y-4">
           <div class="flex gap-4 justify-center">
-            <img src="./images/icon-facebook.svg" alt="">
-            <img src="./images/icon-twitter.svg" alt="">
-            <img src="./images/icon-pinterest.svg" alt="">
-            <img src="./images/icon-instagram.svg" alt="">
+            <img src="./images/icon-facebook.svg" alt="" />
+            <img src="./images/icon-twitter.svg" alt="" />
+            <img src="./images/icon-pinterest.svg" alt="" />
+            <img src="./images/icon-instagram.svg" alt="" />
           </div>
-          <p class="text-[#696969] ">© 2021 Loopstudios. All rights reserved.</p>
+          <p class="text-[#696969]">© 2021 Loopstudios. All rights reserved.</p>
         </div>
       </section>
       <!-- <div class="preloader w-full h-full bg-black"></div> -->
@@ -175,5 +259,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script src="./script.js" />
   </body>
 </html>
