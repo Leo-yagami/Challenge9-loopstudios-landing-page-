@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -34,69 +34,74 @@
     </style>
   </head>
   <body>
-    <main class="min-h-screen relative">
+    <main class="min-h-screen">
+
       <!-- Hero section -->
       <section
-        class="bg-[url('./images/mobile/image-hero.jpg')] bg-cover px-6 pt-8 pb-56"
+        class="bg-[url('./images/mobile/image-hero.jpg')] bg-cover px-6 pt-8 pb-56 relative"
       >
+      <!-- ///////////////////// -->
         <!-- Navbar section -->
-        <div class="flex items-center justify-between">
-          <img src="./images/logo.svg" alt="" class="h-7 md:h-8" />
+        <div class="navigation flex items-center justify-between">
+          <img src="./images/logo.svg" alt="" class="h-7 md:h-8 z-20" />
           <nav class="text-white space-x-3 hidden md:block">
-            <a href="#">About</a>
-            <a href="#">Careers</a>
-            <a href="#">Events</a>
-            <a href="#">Products</a>
-            <a href="#">Support</a>
+            <a href="about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
+            <a href="career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
+            <a href="career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Events</a>
+            <a href="creations" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Products</a>
+            <a href="footer" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Support</a>
           </nav>
-          <div class="">
-            <button class="hamburger cursor-pointer group">
-              <!-- <img src="./images/icon-hamburger.svg" alt="" /> -->
-              <div class="grid justify-items-center gap-1.5 pb-4">
+          <!-- Hamburger Button -->
+          <div class="z-20">
+            <button class="buttonSwitcher hamburger cursor-pointer group">
+              <div class="grid justify-items-center gap-1.5 pb-4 ">
                 <span
-                  class="transition duration-300 ease-out group-hover:rotate-45 group-hover:translate-y-2 w-7 rounded-md h-0.5 bg-white"
+                  class="span1 transition duration-500 ease-out w-7 h-0.5 rounded-md bg-white"
                 ></span>
                 <span
-                  class="transition duration-300 ease-out group-hover:w-0 rounded-md w-7 h-0.5 bg-white"
+                  class="span2 transition duration-500 ease-out  h-0.5 w-7 rounded-md bg-white"
                 ></span>
                 <span
-                  class="transition duration-300 ease-out group-hover:-rotate-45 group-hover:-translate-y-2 rounded-md w-7 h-0.5 bg-white"
+                  class="span3 transition duration-500 ease-out w-7 h-0.5 rounded-md bg-white"
                 ></span>
               </div>
             </button>
           </div>
-        </div>
-        <!-- Mobile navigation -->
-        <div
-          class="mobileNav hidden absolute top-0 left-0 w-full h-full bg-black px-6 pt-10"
+        <!-- //////////////////////// -->
+
+        <!-- //////////////////////// -->
+          <!-- Mobile navigation -->
+          <div
+          class="mobileNav absolute top-0 left-0 w-full hidden h-full bg-black px-6 pt-[2.64rem] z-10"
         >
-          <div class="flex justify-between">
-            <img src="./images/logo.svg" alt="" class="h-7" />
-            <button class="close cursor-pointer group">
-              <img src="./images/icon-close.svg" alt="" />
-            </button>
-          </div>
           <nav
             class="text-white space-y-6 text-3xl flex flex-col mt-40 font-['Josefin Sans'] font-light uppercase"
           >
-            <a href="#">About</a>
-            <a href="#">Careers</a>
-            <a href="#">Events</a>
-            <a href="#">Products</a>
-            <a href="#">Support</a>
+            <a href="about">About</a>
+            <a href="career">Careers</a>
+            <a href="career">Events</a>
+            <a href="creations">Products</a>
+            <a href="footer">Support</a>
           </nav>
         </div>
 
+        </div>
+        <!-- ///////////////////////// -->
+
+        <!-- //////////////////////// -->
         <!-- Hero content -->
-        <div
+        <div id="about"
           class="mt-40 text-white text-[2.5rem] leading-10 uppercase py-6 pl-7 pr-10 border-2 border-white font-['Josefin Sans'] font-light"
         >
           <h1>Immersive experiences that deliver</h1>
         </div>
+        <!-- //////////////////////// -->
       </section>
 
+
+
       <!-- Description section -->
-      <section class="px-6 mt-24">
+      <section id="career" class="px-6 mt-24">
         <!-- Main Image -->
         <img
           src="./images/mobile/image-interactive.jpg"
@@ -118,108 +123,131 @@
           experiences that bind to their brand.
         </p>
       </section>
+
+
+
       <!-- Our Creations section -->
-      <section class="px-6">
+      <section id="creations" class="px-6">
         <h2
           class="mt-14 text-center tracking-normal text-4xl font-['Josefin Sans'] uppercase font-light"
         >
           Our Creations
         </h2>
         <!-- Image gallery -->
-        <div class="mt-10 grid grid-cols-1 gap-5 overflow-hidden font-light">
-          <div class="relative font-['Josefin Sans']">
-            <img src="./images/mobile/image-deep-earth.jpg" alt="" />
-            <div
-              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
-            ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+         <!-- ////////////////////////// -->
+        <div class="mt-10 grid grid-cols-1 gap-5 overflow-hidden font-light font-['Josefin Sans']">
+          <div class="relative group ">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <img src="./images/mobile/image-deep-earth.jpg" class="duration-300 group-hover:scale-105"  alt="" />
+            </div>
+            <!-- Threshold concept -->
+            <div class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 transition-opacity duration-300"></div>
+
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
               >DEEP<br />
               EARTH</span
             >
           </div>
-          <div class="relative">
-            <img src="./images/mobile/image-night-arcade.jpg" alt="" />
+          <div class="relative group ">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <img src="./images/mobile/image-night-arcade.jpg" class="duration-300 group-hover:scale-105" alt="" />
+            </div>
             <div
-              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+              class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
             <span
-              class="absolute left-5 bottom-5 text-2xl leading-6 font-light text-white"
+              class="absolute left-5 bottom-5 text-2xl leading-6 font-light text-white group-hover:text-black"
               >NIGHT<br />
               ARCADE</span
             >
           </div>
-          <div class="relative">
-            <img src="./images/mobile/image-soccer-team.jpg" alt="" />
+          <div class="relative group ">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <img src="./images/mobile/image-soccer-team.jpg" class="duration-300 group-hover:scale-105" alt="" />
+            </div>
             <div
-              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+              class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
               >SOCCER<br />
               TEAM VR</span
             >
           </div>
-          <div class="relative">
-            <img src="./images/mobile/image-grid.jpg" alt="" />
+          <div class="relative group ">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <img src="./images/mobile/image-grid.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+            </div>
             <div
-              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+              class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
               >THE<br />
               GRID</span
             >
           </div>
-          <div class="relative">
-            <img src="./images/mobile/image-from-above.jpg" alt="" />
+          <div class="relative group ">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <img src="./images/mobile/image-from-above.jpg" class="duration-300 group-hover:scale-105 alt=" />
+            </div>
             <div
-              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+              class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
 
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
               >FROM UP<br />
               ABOVE VR</span
             >
           </div>
-          <div class="relative">
-            <img src="./images/mobile/image-pocket-borealis.jpg" alt="" />
+          <div class="relative group ">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <img src="./images/mobile/image-pocket-borealis.jpg" class="duration-300 group-hover:scale-105" alt="" />
+            </div>
             <div
-              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+              class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
               >POCKET<br />
               BOREALIS</span
             >
           </div>
-          <div class="relative">
-            <img src="./images/mobile/image-curiosity.jpg" alt="" />
+          <div class="relative group ">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <img src="./images/mobile/image-curiosity.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+            </div>
             <div
-              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+              class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
               >THE<br />
               CURIOSITY</span
             >
           </div>
-          <div class="relative">
-            <img src="./images/mobile/image-fisheye.jpg" alt="" />
+          <div class="relative group ">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <img src="./images/mobile/image-fisheye.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+            </div>
             <div
-              class="absolute inset-0 bg-gradient-to-r from-[rgba(0,0,0,0.7)] to-transparent"
+              class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white"
+            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
               >MAKE IT<br />
               FISHEYE</span
             >
           </div>
         </div>
+        <!-- ////////////////////// -->
+
         <!-- Button -->
         <button
-          class="uppercase block mx-auto border font-medium border-black px-8 py-2 font-['Josefin Sans'] mt-6"
+          class="duration-300 uppercase block mx-auto border font-medium border-black px-8 py-2 font-['Josefin Sans'] mt-6 hover:bg-black hover:text-white"
           style="letter-spacing: 0.3em"
         >
           See all
         </button>
       </section>
+
       <!-- Footer section -->
-      <section
+      <section id="footer"
         class="font-['Alata'] font-normal mt-20 bg-black px-8 py-12 flex flex-col items-center justify-center gap-10"
       >
         <!-- Group1: logo and navlinks -->
@@ -228,20 +256,28 @@
           <nav
             class="flex flex-col gap-4 items-center text-[rgba(255,255,255,0.90)]"
           >
-            <a href="#">About</a>
-            <a href="#">Careers</a>
-            <a href="#">Events</a>
-            <a href="#">Products</a>
-            <a href="#">Support</a>
+            <a href="about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
+            <a href="career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
+            <a href="career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Events</a>
+            <a href="creations" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Products</a>
+            <a href="footer" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Support</a>
           </nav>
         </div>
         <!-- Group 2: social links and copyright statement -->
         <div class="space-y-4">
           <div class="flex gap-4 justify-center">
-            <img src="./images/icon-facebook.svg" alt="" />
-            <img src="./images/icon-twitter.svg" alt="" />
-            <img src="./images/icon-pinterest.svg" alt="" />
-            <img src="./images/icon-instagram.svg" alt="" />
+            <a href="https://x.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
+              <img src="./images/icon-facebook.svg"  alt="" />
+            </a>
+            <a href="https://x.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
+              <img src="./images/icon-twitter.svg" alt="" />
+            </a>
+            <a href="https://x.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
+              <img src="./images/icon-pinterest.svg" alt="" />
+            </a>
+            <a href="https://x.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
+              <img src="./images/icon-instagram.svg"  alt="" />
+            </a>
           </div>
           <p class="text-[#696969]">© 2021 Loopstudios. All rights reserved.</p>
         </div>
@@ -259,6 +295,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
-    <script src="./script.js" />
+    <script src="./script.js"></script>
   </body>
 </html>
