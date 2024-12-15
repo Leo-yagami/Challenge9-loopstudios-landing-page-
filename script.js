@@ -61,10 +61,4 @@ hamburgerEl.addEventListener("click", () => {
   // locking the scroll to the mobile nav 
   body.classList.toggle('overflow-hidden')
 });
-
-// closeEl.addEventListener("click", () => {
-//   console.log("close mobile nav");
-//   mobileNavEl.classList.toggle("hidden");
-//   document.querySelector('.navigation').classList.toggle('overflow-hidden')
-  
-// });
+// Checking if the commits are reaching my github
