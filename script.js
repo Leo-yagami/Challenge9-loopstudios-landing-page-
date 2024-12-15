@@ -4,6 +4,13 @@ const body = document.body;
 const spanEl1 = document.querySelector('.span1')
 const spanEl2 = document.querySelector('.span2')
 const spanEl3 = document.querySelector('.span3')
+const navOpsEl = document.querySelector('.navOps');
+const links = document.querySelector('.links')
+const link1 = document.querySelector('.link1')
+const link2 = document.querySelector('.link2')
+const link3 = document.querySelector('.link3')
+const link4 = document.querySelector('.link4')
+const link5 = document.querySelector('.link5')
 // const closeEl = document.querySelector(".close");
 
 hamburgerEl.addEventListener("click", () => {
@@ -19,8 +26,38 @@ hamburgerEl.addEventListener("click", () => {
   spanEl3.classList.toggle("-translate-y-2");
   ////////
 
+  mobileNavEl.classList.toggle("delay-500")
+  mobileNavEl.classList.toggle("h-screen");
+  mobileNavEl.classList.toggle("h-0");
+  // to sync the slide up with the fading links
 
-  mobileNavEl.classList.toggle("hidden");
+  // Links animation
+  // opacity + slight vertical slide animation
+  link1.classList.toggle("opacity-0")
+  link2.classList.toggle("opacity-0")
+  link3.classList.toggle("opacity-0")
+  link4.classList.toggle("opacity-0")
+  link5.classList.toggle("opacity-0")
+  link1.classList.toggle("translate-y-3")
+  link2.classList.toggle("translate-y-3")
+  link3.classList.toggle("translate-y-3")
+  link4.classList.toggle("translate-y-3")
+  link5.classList.toggle("translate-y-3")
+  // delay logic
+  link1.classList.toggle("delay-[0.5s]")
+  link2.classList.toggle("delay-[0.4s]")
+  link3.classList.toggle("delay-[0.3s]")
+  link4.classList.toggle("delay-[0.2s]")
+  link5.classList.toggle("delay-[0.1s]")
+  link1.classList.toggle("delay-[0.1s]")
+  link2.classList.toggle("delay-[0.2s]")
+  link3.classList.toggle("delay-[0.3s]")
+  link4.classList.toggle("delay-[0.4s]")
+  link5.classList.toggle("delay-[0.5s]")
+  // navOpsEl.classList.toggle("hidden")
+  // setTimeout(() =>{
+  //   mobileNavEl.classList.toggle("z-10");
+  // }, 500);
   // locking the scroll to the mobile nav 
   body.classList.toggle('overflow-hidden')
 });
