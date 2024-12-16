@@ -37,22 +37,22 @@
     <main class="min-h-screen">
 
       <!-- Hero section -->
-      <section
-        class="bg-[url('./images/mobile/image-hero.jpg')] bg-cover px-6 pt-8 pb-56 relative"
+      <section href=""
+        class="bg-[url('./images/mobile/image-hero.jpg')] md:bg-[url('./images/desktop/image-hero.jpg')] bg-no-repeat bg-cover px-6 md:px-[10.5rem] pt-8 md:pt-16 pb-56 relative"
       >
       <!-- ///////////////////// -->
         <!-- Navbar section -->
         <div class="navigation flex items-center justify-between">
           <img src="./images/logo.svg" alt="" class="h-7 md:h-8 z-20" />
-          <nav class="text-white space-x-3 hidden md:block">
+          <nav class="text-white space-x-3 md:space-x-5 md:mr-1 hidden md:block font-bold">
             <a href="about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
             <a href="career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
             <a href="career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Events</a>
             <a href="creations" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Products</a>
             <a href="footer" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Support</a>
           </nav>
-          <!-- Hamburger Button -->
-          <div class="z-20">
+          <!-- Hamburger Button(must be turned off on deskop) -->
+          <div class="z-20 block md:hidden">
             <button class="buttonSwitcher hamburger cursor-pointer group">
               <div class="grid justify-items-center gap-1.5 pb-4 ">
                 <span
@@ -91,9 +91,9 @@
         <!-- //////////////////////// -->
         <!-- Hero content -->
         <div id="about"
-          class="mt-40 text-white text-[2.5rem] leading-10 uppercase py-6 pl-7 pr-10 border-2 border-white font-['Josefin Sans'] font-light"
+          class="mt-40 text-white text-[2.5rem] text-7xl py-6 pl-7 pr-32 md:pl-8 leading-10 md:leading-none  uppercase border-2 border-white font-['Josefin Sans'] font-light inline-block"
         >
-          <h1>Immersive experiences that deliver</h1>
+          <h1 class="block">Immersive<br> experiences<br> that deliver</h1>
         </div>
         <!-- //////////////////////// -->
       </section>

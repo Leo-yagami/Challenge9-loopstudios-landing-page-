@@ -30,7 +30,6 @@ hamburgerEl.addEventListener("click", () => {
   mobileNavEl.classList.toggle("h-screen");
   mobileNavEl.classList.toggle("h-0");
   // to sync the slide up with the fading links
-
   // Links animation
   // opacity + slight vertical slide animation
   link1.classList.toggle("opacity-0")
