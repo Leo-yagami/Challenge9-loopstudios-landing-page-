@@ -38,7 +38,7 @@
 
       <!-- Hero section -->
       <section href=""
-        class="bg-[url('./images/mobile/image-hero.jpg')] md:bg-[url('./images/desktop/image-hero.jpg')] bg-no-repeat bg-cover px-6 md:px-[10.5rem] pt-8 md:pt-16 pb-56 relative"
+        class="bg-[url('./images/mobile/image-hero.jpg')] md:bg-[url('./images/desktop/image-hero.jpg')] bg-no-repeat bg-cover bg-center xl:bg-center xl:bg-cover pt-8 md:pt-16 pb-56 relative px-6 sm:px-10 xl:px-[10.5rem]"
       >
       <!-- ///////////////////// -->
         <!-- Navbar section -->
@@ -72,7 +72,7 @@
         <!-- //////////////////////// -->
           <!-- Mobile navigation -->
           <div
-          class="mobileNav navOps transition-all duration-700 absolute top-0 left-0 w-screen h-0 bg-black px-6 delay-500"
+          class="mobileNav navOps transition-all duration-700 absolute top-0 left-0 w-screen h-0 bg-black px-6 delay-500 md:hidden"
         >
           <nav
             class="links  text-white space-y-6 text-3xl flex flex-col mt-40 font-['Josefin Sans'] font-light uppercase "
@@ -91,9 +91,9 @@
         <!-- //////////////////////// -->
         <!-- Hero content -->
         <div id="about"
-          class="mt-40 text-white text-[2.5rem] text-7xl py-6 pl-7 pr-32 md:pl-8 leading-10 md:leading-none  uppercase border-2 border-white font-['Josefin Sans'] font-light inline-block"
+          class="mt-40 text-white text-[2.5rem] sm:text-[3.5rem] leading-10 sm:leading-tight mx-2 md:text-7xl py-6 pl-7  pr-10 md:pr-32 md:pl-9  md:leading-none  uppercase border-2 border-white font-['Josefin Sans'] font-light inline-block"
         >
-          <h1 class="block">Immersive<br> experiences<br> that deliver</h1>
+          <h1 class="">Immersive<br> experiences<br> that deliver</h1>
         </div>
         <!-- //////////////////////// -->
       </section>
@@ -101,27 +101,31 @@
 
 
       <!-- Description section -->
-      <section id="career" class="px-6 mt-24">
+      <section id="career" class="px-6 sm:px-10 xl:px-[10.5rem] mt-24 xl:flex xl:items-center">
         <!-- Main Image -->
         <img
           src="./images/mobile/image-interactive.jpg"
           alt="Wannabe T-rex man wearing a vr headset "
+          class="mx-auto xl:mx-0"
         />
         <!-- Heading -->
-        <h2
-          class="mt-8 text-center tracking-normal text-4xl font-['Josefin Sans'] uppercase font-light"
-        >
-          The leader in interactive VR
-        </h2>
-        <!-- Description -->
-        <p
-          class="mt-4 px-2 text-center font-['Alata'] font-normal text-[#8c8c8c]"
-        >
-          Founded in 2011, Loopstudios has been producing world-class virtual
-          reality projects for some of the best companies around the globe. Our
-          award-winning creations have transformed businesses through digital
-          experiences that bind to their brand.
-        </p>
+         <div class="xl:min-w-max xl:bg-white xl:px-16 xl:py-8 xl:-ml-36 xl:mt-48">
+          
+           <h2
+             class="mt-8 text-center tracking-normal xl:tracking-wide text-4xl xl:text-5xl font-['Josefin Sans'] uppercase font-light xl:max-w-md xl:text-left xl:pl-2.5"
+           >
+             The leader in interactive VR
+           </h2>
+           <!-- Description -->
+           <p
+             class="mt-7 px-2 text-center font-['Alata'] font-normal text-[#8c8c8c] xl:max-w-[28rem] xl:text-left xl:leading-7 xl:text-[15px]"
+           >
+             Founded in 2011, Loopstudios has been producing world-class virtual
+             reality projects for some of the best companies around the globe. Our
+             award-winning creations have transformed businesses through digital
+             experiences that bind to their brand.
+           </p>
+         </div>
       </section>
 
 
@@ -135,8 +139,8 @@
         </h2>
         <!-- Image gallery -->
          <!-- ////////////////////////// -->
-        <div class="mt-10 grid grid-cols-1 gap-5 overflow-hidden font-light font-['Josefin Sans']">
-          <div class="relative group ">
+        <div class="mt-10 grid grid-cols-1 gap-5 overflow-hidden font-light font-['Josefin Sans'] inline-block">
+          <div class="relative group">
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
               <img src="./images/mobile/image-deep-earth.jpg" class="duration-300 group-hover:scale-105"  alt="" />
             </div>
