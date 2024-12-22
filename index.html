@@ -38,7 +38,7 @@
 
       <!-- Hero section -->
       <section href=""
-        class="bg-[url('./images/mobile/image-hero.jpg')] md:bg-[url('./images/desktop/image-hero.jpg')] bg-no-repeat bg-cover bg-center xl:bg-center xl:bg-cover pt-8 md:pt-16 pb-56 relative px-6 sm:px-10 xl:px-[10.5rem]"
+        class="bg-[url('./images/mobile/image-hero.jpg')] md:bg-[url('./images/desktop/image-hero.jpg')] bg-cover bg-center xl:bg-center xl:bg-cover pt-8 md:pt-16 pb-56 relative px-6 sm:px-10 xl:px-[10.5rem]"
       >
       <!-- ///////////////////// -->
         <!-- Navbar section -->
@@ -82,7 +82,10 @@
             <a href="career" class="link3 opacity-0 translate-y-3 delay-[0.3s] duration-300">Events</a>
             <a href="creations" class="link4 opacity-0 translate-y-3 delay-[0.2s] duration-300">Products</a>
             <a href="footer" class="link5 opacity-0 translate-y-3 delay-[0.1s] duration-300">Support</a>
-          </nav>
+          </nav>section
+          section
+          section
+          section
         </div>
 
         </div>
@@ -91,7 +94,7 @@
         <!-- //////////////////////// -->
         <!-- Hero content -->
         <div id="about"
-          class="mt-40 text-white text-[2.5rem] sm:text-[3.5rem] leading-10 sm:leading-tight mx-2 md:text-7xl py-6 pl-7  pr-10 md:pr-32 md:pl-9  md:leading-none  uppercase border-2 border-white font-['Josefin Sans'] font-light inline-block"
+          class="mt-40 text-white text-[2.5rem] sm:text-[3.5rem] leading-10 sm:leading-tight mx-2 md:text-7xl xl:text-[5rem] py-6 pl-7  pr-10 md:pr-32 xl:pr-24 md:pl-9  md:leading-none  uppercase border-2 border-white font-['Josefin Sans'] font-light inline-block"
         >
           <h1 class="">Immersive<br> experiences<br> that deliver</h1>
         </div>
@@ -101,15 +104,15 @@
 
 
       <!-- Description section -->
-      <section id="career" class="px-6 sm:px-10 xl:px-[10.5rem] mt-24 xl:flex xl:items-center">
+      <section id="career" class="px-6 sm:px-10 xl:px-[10.5rem] mt-24 xl:flex xl:items-center xl:justify-between">
         <!-- Main Image -->
         <img
           src="./images/mobile/image-interactive.jpg"
           alt="Wannabe T-rex man wearing a vr headset "
-          class="mx-auto xl:mx-0"
+          class="mx-auto xl:mx-0 xl:min-w-[750px] "
         />
         <!-- Heading -->
-         <div class="xl:min-w-max xl:bg-white xl:px-16 xl:py-8 xl:-ml-36 xl:mt-48">
+         <div class="xl:min-w-max xl:bg-white xl:px-20 xl:py-12 xl:-ml-44 xl:mt-60">
           
            <h2
              class="mt-8 text-center tracking-normal xl:tracking-wide text-4xl xl:text-5xl font-['Josefin Sans'] uppercase font-light xl:max-w-md xl:text-left xl:pl-2.5"
@@ -118,7 +121,7 @@
            </h2>
            <!-- Description -->
            <p
-             class="mt-7 px-2 text-center font-['Alata'] font-normal text-[#8c8c8c] xl:max-w-[28rem] xl:text-left xl:leading-7 xl:text-[15px]"
+             class="mt-7 xl:mt-6 pl-2 text-center font-['Alata'] font-normal text-[#8c8c8c] lg:mx-auto xl:max-w-[28rem] xl:text-left xl:leading-7 xl:text-[15px]"
            >
              Founded in 2011, Loopstudios has been producing world-class virtual
              reality projects for some of the best companies around the globe. Our
@@ -131,18 +134,21 @@
 
 
       <!-- Our Creations section -->
-      <section id="creations" class="px-6">
+      <section id="creations" class="px-6 flex flex-col gap-8 md:gap-10 lg:gap-0 mt-14 sm:mx-10 lg:flex-row lg:flex-wrap lg:justify-between lg:items-center xl:mx-[10.5rem] lg:px-0">
         <h2
-          class="mt-14 text-center tracking-normal text-4xl font-['Josefin Sans'] uppercase font-light"
+          class="order-0 text-center tracking-normal text-4xl font-['Josefin Sans'] uppercase font-light"
         >
           Our Creations
         </h2>
         <!-- Image gallery -->
          <!-- ////////////////////////// -->
-        <div class="mt-10 grid grid-cols-1 gap-5 overflow-hidden font-light font-['Josefin Sans'] inline-block">
+        <div class="lg:order-2 mt-4 lg:mt-10 mx-auto grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-5 gap-x-20 lg:gap-x-5 overflow-hidden font-light font-['Josefin Sans'] inline-block">
           <div class="relative group">
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
-              <img src="./images/mobile/image-deep-earth.jpg" class="duration-300 group-hover:scale-105"  alt="" />
+              <picture>
+                <source srcset="./images/desktop/image-deep-earth.jpg" media="(min-width: 1024px)">
+                <img src="./images/mobile/image-deep-earth.jpg" class="duration-300 group-hover:scale-105"  alt="" />
+              </picture>
             </div>
             <!-- Threshold concept -->
             <div class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 transition-opacity duration-300"></div>
@@ -153,8 +159,11 @@
             >
           </div>
           <div class="relative group ">
-            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
-              <img src="./images/mobile/image-night-arcade.jpg" class="duration-300 group-hover:scale-105" alt="" />
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <Picture>
+                <source srcset="./images/desktop/image-night-arcade.jpg" media="(min-width: 1024px)">
+                <img src="./images/mobile/image-night-arcade.jpg" class="duration-300 group-hover:scale-105" alt="" />
+              </Picture>
             </div>
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
@@ -166,8 +175,11 @@
             >
           </div>
           <div class="relative group ">
-            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
-              <img src="./images/mobile/image-soccer-team.jpg" class="duration-300 group-hover:scale-105" alt="" />
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 ] after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <Picture>
+                <source srcset="./images/desktop/image-soccer-team.jpg" media="(min-width: 1024px)">
+                <img src="./images/mobile/image-soccer-team.jpg" class="duration-300 group-hover:scale-105" alt="" />
+              </Picture>
             </div>
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
@@ -178,8 +190,11 @@
             >
           </div>
           <div class="relative group ">
-            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
-              <img src="./images/mobile/image-grid.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <Picture>
+                <source srcset="./images/desktop/image-grid.jpg" media="(min-width: 1024px)"> 
+                <img src="./images/mobile/image-grid.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+              </Picture>
             </div>
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
@@ -189,9 +204,12 @@
               GRID</span
             >
           </div>
-          <div class="relative group ">
-            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+          <div class="relative">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+            <Picture>
+              <source srcset="./images/desktop/image-from-above.jpg" media="(min-width: 1024px)">
               <img src="./images/mobile/image-from-above.jpg" class="duration-300 group-hover:scale-105 alt=" />
+  </Picture>  
             </div>
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
@@ -203,8 +221,11 @@
             >
           </div>
           <div class="relative group ">
-            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
-              <img src="./images/mobile/image-pocket-borealis.jpg" class="duration-300 group-hover:scale-105" alt="" />
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+              <Picture>
+                <source srcset="./images/desktop/image-pocket-borealis.jpg" media="(min-width: 1024px)">
+                <img src="./images/mobile/image-pocket-borealis.jpg" class="duration-300 group-hover:scale-105" alt="" /></Picture>
+
             </div>
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
@@ -215,8 +236,11 @@
             >
           </div>
           <div class="relative group ">
-            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+            <Picture>
+              <source srcset="./images/desktop/image-curiosity.jpg" media="(min-width: 1024px)">
               <img src="./images/mobile/image-curiosity.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+     </Picture>  
             </div>
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
@@ -227,8 +251,11 @@
             >
           </div>
           <div class="relative group ">
-            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+            <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
+            <Picture>
+              <source srcset="./images/desktop/image-fisheye.jpg" media="(min-width: 1024px)">
               <img src="./images/mobile/image-fisheye.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+     </Picture>  
             </div>
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
@@ -243,7 +270,7 @@
 
         <!-- Button -->
         <button
-          class="duration-300 uppercase block mx-auto border font-medium border-black px-8 py-2 font-['Josefin Sans'] mt-6 hover:bg-black hover:text-white"
+          class="w-1/2 max-w-sm lg:w-auto lg:order-1 lg:mx-0 duration-300 uppercase block mx-auto border font-medium border-black px-8 py-2 font-['Josefin Sans'] hover:bg-black hover:text-white"
           style="letter-spacing: 0.3em"
         >
           See all
@@ -252,13 +279,13 @@
 
       <!-- Footer section -->
       <section id="footer"
-        class="font-['Alata'] font-normal mt-20 bg-black px-8 py-12 flex flex-col items-center justify-center gap-10"
+        class="font-['Alata'] font-normal mt-20 bg-black px-8 py-12 flex flex-col items-center justify-center gap-10 xl:flex-row xl:justify-between xl:px-[10.5rem]"
       >
         <!-- Group1: logo and navlinks -->
-        <div class="space-y-8">
+        <div class="space-y-8 xl:space-y-6">
           <img src="./images/logo.svg" alt="" class="h-7 md:h-8" />
           <nav
-            class="flex flex-col gap-4 items-center text-[rgba(255,255,255,0.90)]"
+            class="flex flex-col gap-4 items-center text-[rgba(255,255,255,0.90)] xl:flex-row"
           >
             <a href="about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
             <a href="career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
@@ -268,8 +295,8 @@
           </nav>
         </div>
         <!-- Group 2: social links and copyright statement -->
-        <div class="space-y-4">
-          <div class="flex gap-4 justify-center">
+        <div class="space-y-4 xl:space-y-6">
+          <div class="flex gap-4 justify-center xl:justify-end">
             <a href="https://x.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
               <img src="./images/icon-facebook.svg"  alt="" />
             </a>
