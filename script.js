@@ -11,6 +11,7 @@ const link2 = document.querySelector('.link2')
 const link3 = document.querySelector('.link3')
 const link4 = document.querySelector('.link4')
 const link5 = document.querySelector('.link5')
+const stickyNav = document.querySelector('.navigation');
 // const closeEl = document.querySelector(".close");
 
 hamburgerEl.addEventListener("click", () => {
@@ -60,4 +61,30 @@ hamburgerEl.addEventListener("click", () => {
   // locking the scroll to the mobile nav 
   body.classList.toggle('overflow-hidden')
 });
-// Checking if the commits are reaching my github
+
+// Implementing intersection observer sticky navigation
+const options = {
+  root: null,
+  threshold: [1],
+};
+
+console.log(stickyNav);
+const callback = (entries)=>{
+    entries.forEach(entry =>{
+      if(!entry.isIntersecting){
+        console.log("WE ARE INTERSECTING");
+          stickyNav.style.backdropFilter = 'blur(10px)';
+          stickyNav.style.webkitBackdropFilter = 'blur(10px)'; // Safari support
+          stickyNav.classList.toggle("fixed")
+      }
+      else {
+        stickyNav.style.backdropFilter = 'blur(0px)';
+        // stickyNav.style.webkitBackdropFilter = 'blur(10px)'; // Safari support
+        // stickyNav.classList.toggle("top-4");
+        console.log("NAHH")
+      }
+    })
+
+}
+const obs = new IntersectionObserver(callback, options);
+obs.observe(stickyNav);

@@ -34,15 +34,15 @@
     </style>
   </head>
   <body>
-    <main class="min-h-screen">
+    <main class="scroll-Area min-h-screen">
 
       <!-- Hero section -->
       <section href=""
-        class="bg-[url('./images/mobile/image-hero.jpg')] md:bg-[url('./images/desktop/image-hero.jpg')] bg-cover bg-center xl:bg-center xl:bg-cover pt-8 md:pt-16 pb-56 relative px-6 sm:px-10 xl:px-[10.5rem]"
+        class="bg-[url('./images/mobile/image-hero.jpg')] md:bg-[url('./images/desktop/image-hero.jpg')] bg-cover bg-center xl:bg-center xl:bg-cover pb-56 relative pt-8 md:pt-12"
       >
       <!-- ///////////////////// -->
         <!-- Navbar section -->
-        <div class="navigation flex items-center justify-between">
+        <div class="navigation flex items-center py-6 justify-between px-6 sm:px-10 xl:px-[10.5rem] sticky -top-1 transition-all duration-500">
           <img src="./images/logo.svg" alt="" class="h-7 md:h-8 z-20" />
           <nav class="text-white space-x-3 md:space-x-5 md:mr-1 hidden md:block font-bold">
             <a href="about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
@@ -77,7 +77,7 @@
           <nav
             class="links  text-white space-y-6 text-3xl flex flex-col mt-40 font-['Josefin Sans'] font-light uppercase "
           >
-            <a href="about" class="link1 opacity-0 translate-y-3 delay-[0.5s] duration-300">About</a>
+            <a href="#about" class="link1 opacity-0 translate-y-3 delay-[0.5s] duration-300">About</a>
             <a href="career" class="link2 opacity-0 translate-y-3 delay-[0.4s] duration-300">Careers</a>
             <a href="career" class="link3 opacity-0 translate-y-3 delay-[0.3s] duration-300">Events</a>
             <a href="creations" class="link4 opacity-0 translate-y-3 delay-[0.2s] duration-300">Products</a>
@@ -94,7 +94,7 @@
         <!-- //////////////////////// -->
         <!-- Hero content -->
         <div id="about"
-          class="mt-40 text-white text-[2.5rem] sm:text-[3.5rem] leading-10 sm:leading-tight mx-2 md:text-7xl xl:text-[5rem] py-6 pl-7  pr-10 md:pr-32 xl:pr-24 md:pl-9  md:leading-none  uppercase border-2 border-white font-['Josefin Sans'] font-light inline-block"
+          class="mt-40 text-white text-[2.5rem] sm:text-[3.5rem] leading-10 sm:leading-tight mx-2 md:text-7xl xl:text-[5rem] py-6 pl-7  pr-10 md:pr-32 xl:pr-24 md:pl-9  md:leading-none  uppercase border-2 border-white font-['Josefin Sans'] font-light inline-block mx-6 sm:mx-10 xl:mx-[10.5rem] transition-all duration-500"
         >
           <h1 class="">Immersive<br> experiences<br> that deliver</h1>
         </div>
@@ -134,7 +134,7 @@
 
 
       <!-- Our Creations section -->
-      <section id="creations" class="px-6 flex flex-col gap-8 md:gap-10 lg:gap-0 mt-14 sm:mx-10 lg:flex-row lg:flex-wrap lg:justify-between lg:items-center xl:mx-[10.5rem] lg:px-0">
+      <section id="creations" class="px-6 flex flex-col gap-8 md:gap-10 lg:gap-0 mt-14 sm:mx-10 lg:flex-row lg:flex-wrap lg:justify-between lg:items-center xl:mx-[10.5rem] 2xl:mx-[18rem] lg:px-0">
         <h2
           class="order-0 text-center tracking-normal text-4xl font-['Josefin Sans'] uppercase font-light"
         >
@@ -153,7 +153,7 @@
             <!-- Threshold concept -->
             <div class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 transition-opacity duration-300"></div>
 
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
+            <span class="absolute left-5 bottom-5 text-2xl md:left-6 md:bottom-6 md:text-3xl lg:bottom-8 lg:left-8 leading-6 text-white group-hover:text-black"
               >DEEP<br />
               EARTH</span
             >
@@ -169,7 +169,7 @@
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
             <span
-              class="absolute left-5 bottom-5 text-2xl leading-6 font-light text-white group-hover:text-black"
+              class="absolute left-5 bottom-5 text-2xl md:left-6 md:bottom-6 md:text-3xl lg:bottom-8 lg:left-8 leading-6 font-light text-white group-hover:text-black"
               >NIGHT<br />
               ARCADE</span
             >
@@ -184,7 +184,7 @@
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
+            <span class="absolute left-5 bottom-5 text-2xl md:left-6 md:bottom-6 md:text-3xl lg:bottom-8 lg:left-8 leading-6 text-white group-hover:text-black"
               >SOCCER<br />
               TEAM VR</span
             >
@@ -199,12 +199,12 @@
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
+            <span class="absolute left-5 bottom-5 text-2xl md:left-6 md:bottom-6 md:text-3xl lg:bottom-8 lg:left-8 leading-6 text-white group-hover:text-black"
               >THE<br />
               GRID</span
             >
           </div>
-          <div class="relative">
+          <div class="relative group">
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
             <Picture>
               <source srcset="./images/desktop/image-from-above.jpg" media="(min-width: 1024px)">
@@ -215,7 +215,7 @@
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
 
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
+            <span class="absolute left-5 bottom-5 text-2xl md:left-6 md:bottom-6 md:text-3xl lg:bottom-8 lg:left-8 leading-6 text-white group-hover:text-black"
               >FROM UP<br />
               ABOVE VR</span
             >
@@ -229,8 +229,8 @@
             </div>
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
-            ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
+              ></div>
+              <span class="absolute left-5 bottom-5 text-2xl md:left-6 md:bottom-6 md:text-3xl lg:bottom-8 lg:left-8 leading-6 text-white group-hover:text-black"
               >POCKET<br />
               BOREALIS</span
             >
@@ -244,8 +244,8 @@
             </div>
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
-            ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
+              ></div>
+              <span class="absolute left-5 bottom-5 text-2xl md:left-6 md:bottom-6 md:text-3xl lg:bottom-8 lg:left-8  leading-6 text-white group-hover:text-black"
               >THE<br />
               CURIOSITY</span
             >
@@ -260,7 +260,7 @@
             <div
               class="absolute inset-0 group-hover:bg-white group-hover:bg-opacity-50 duration-300"
             ></div>
-            <span class="absolute left-5 bottom-5 text-2xl leading-6 text-white group-hover:text-black"
+            <span class="absolute left-5 bottom-5 text-2xl md:left-6 md:bottom-6 md:text-3xl lg:bottom-8 lg:left-8 leading-6 text-white group-hover:text-black"
               >MAKE IT<br />
               FISHEYE</span
             >
@@ -270,7 +270,7 @@
 
         <!-- Button -->
         <button
-          class="w-1/2 max-w-sm lg:w-auto lg:order-1 lg:mx-0 duration-300 uppercase block mx-auto border font-medium border-black px-8 py-2 font-['Josefin Sans'] hover:bg-black hover:text-white"
+          class="w-1/2 max-w-sm lg:w-fit lg:order-1 lg:mx-0 duration-300 uppercase block mx-auto border font-medium border-black px-8 py-2 font-['Josefin Sans'] hover:bg-black hover:text-white"
           style="letter-spacing: 0.3em"
         >
           See all
