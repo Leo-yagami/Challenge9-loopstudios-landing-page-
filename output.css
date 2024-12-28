@@ -632,6 +632,10 @@ video {
   top: -0.25rem;
 }
 
+.-top-10 {
+  top: -2.5rem;
+}
+
 .-top-12 {
   top: -3rem;
 }
@@ -720,12 +724,12 @@ video {
   top: 2rem;
 }
 
-.-top-10 {
-  top: -2.5rem;
-}
-
 .-z-10 {
   z-index: -10;
+}
+
+.-z-50 {
+  z-index: -50;
 }
 
 .z-10 {
@@ -742,10 +746,6 @@ video {
 
 .z-\[2\] {
   z-index: 2;
-}
-
-.-z-50 {
-  z-index: -50;
 }
 
 .order-1 {
@@ -815,8 +815,20 @@ video {
   margin-left: -11rem;
 }
 
+.-mt-12 {
+  margin-top: -3rem;
+}
+
 .-mt-16 {
   margin-top: -4rem;
+}
+
+.-mt-24 {
+  margin-top: -6rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .mb-4 {
@@ -927,28 +939,16 @@ video {
   margin-top: 1.75rem;
 }
 
+.mt-72 {
+  margin-top: 18rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
 .mt-96 {
   margin-top: 24rem;
-}
-
-.-mt-12 {
-  margin-top: -3rem;
-}
-
-.-mt-24 {
-  margin-top: -6rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.mt-72 {
-  margin-top: 18rem;
 }
 
 .block {
@@ -1015,8 +1015,16 @@ video {
   height: 0.25rem;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .h-20 {
   height: 5rem;
+}
+
+.h-28 {
+  height: 7rem;
 }
 
 .h-6 {
@@ -1037,18 +1045,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.h-28 {
-  height: 7rem;
-}
-
-.h-\[0vh\] {
-  height: 0vh;
 }
 
 .min-h-0 {
@@ -1692,6 +1688,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -1702,13 +1703,12 @@ video {
   padding-bottom: 2rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pb-0 {
   padding-bottom: 0px;
+}
+
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
 .pb-4 {
@@ -1745,6 +1745,10 @@ video {
 
 .pl-3 {
   padding-left: 0.75rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .pl-6 {
@@ -1831,24 +1835,16 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-24 {
+  padding-top: 6rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
-.pt-24 {
-  padding-top: 6rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
 }
 
 .text-left {
@@ -2341,10 +2337,6 @@ html,body{
 
   .md\:mr-1 {
     margin-right: 0.25rem;
-  }
-
-  .md\:mt-12 {
-    margin-top: 3rem;
   }
 
   .md\:block {
