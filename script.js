@@ -13,13 +13,14 @@ const link4 = document.querySelector('.link4')
 const link5 = document.querySelector('.link5')
 const stickyNav = document.querySelector('.navigation');
 const sec = document.querySelector(".sec");
+const linksArr = [link1, link2, link3, link4, link5];
 // const closeEl = document.querySelector(".close");
 
 hamburgerEl.addEventListener("click", (event) => {
   console.log("clicked");
   console.log(event)
-  hamburgerEl.classList.toggle("hamburger");
-  hamburgerEl.classList.toggle("close");
+  // hamburgerEl.classList.toggle("hamburger");
+  // hamburgerEl.classList.toggle("close");
   // Classes for animation
   spanEl1.classList.toggle("rotate-45");
   spanEl1.classList.toggle("translate-y-2");
@@ -113,6 +114,109 @@ hamburgerEl.addEventListener("click", (event) => {
   // locking the scroll to the mobile nav 
   body.classList.toggle('overflow-hidden')
 });
+
+linksArr.forEach(linkie => {
+  linkie.addEventListener("click", (event) =>{
+    console.log(event)
+    console.log("clicked");
+    console.log(event)
+    // hamburgerEl.classList.toggle("hamburger");
+    // hamburgerEl.classList.toggle("close");
+    // Classes for animation
+    spanEl1.classList.toggle("rotate-45");
+    spanEl1.classList.toggle("translate-y-2");
+    spanEl2.classList.toggle("w-0");
+    spanEl2.classList.toggle("w-7");
+    spanEl3.classList.toggle("-rotate-45");
+    spanEl3.classList.toggle("-translate-y-2");
+    ////////
+  
+    // sec.classList.toggle("pt-8")
+    // sec.classList.toggle("md:pt-12")
+    mobileNavEl.classList.toggle("delay-500")
+    mobileNavEl.classList.toggle("h-screen");
+    mobileNavEl.classList.toggle("h-0");
+    // to sync the slide up with the fading links
+    // Links animation
+    // opacity + slight vertical slide animation
+    // Adjusting the z-index values with a timining specific to the button state to adjust for smoother transitioning
+    if(link1.classList.contains("opacity-0")){
+      link1.classList.toggle("hidden")
+      link2.classList.toggle("hidden")
+      link3.classList.toggle("hidden")
+      link4.classList.toggle("hidden")
+      link5.classList.toggle("hidden")
+      setTimeout(() => {
+        // links.classList.toggle("hidden")
+        // links.classList.toggle("flex")
+        link1.classList.toggle("opacity-0")
+        link2.classList.toggle("opacity-0")
+        link3.classList.toggle("opacity-0")
+        link4.classList.toggle("opacity-0")
+        link5.classList.toggle("opacity-0")
+        link1.classList.toggle("translate-y-3")
+        link2.classList.toggle("translate-y-3")
+        link3.classList.toggle("translate-y-3")
+        link4.classList.toggle("translate-y-3")
+        link5.classList.toggle("translate-y-3")
+        setTimeout
+      },100)
+      
+    }
+    else{
+      setTimeout(() => {
+        link1.classList.toggle("hidden")
+        link2.classList.toggle("hidden")
+        link3.classList.toggle("hidden")
+        link4.classList.toggle("hidden")
+        link5.classList.toggle("hidden")
+        // links.classList.toggle("hidden")
+        // links.classList.toggle("flex")
+      },1000)
+      link1.classList.toggle("opacity-0")
+      link2.classList.toggle("opacity-0")
+      link3.classList.toggle("opacity-0")
+      link4.classList.toggle("opacity-0")
+      link5.classList.toggle("opacity-0")
+      link1.classList.toggle("translate-y-3")
+      link2.classList.toggle("translate-y-3")
+      link3.classList.toggle("translate-y-3")
+      link4.classList.toggle("translate-y-3")
+      link5.classList.toggle("translate-y-3")
+    }
+    // link1.classList.toggle("opacity-0")
+    // link2.classList.toggle("opacity-0")
+    // link3.classList.toggle("opacity-0")
+    // link4.classList.toggle("opacity-0")
+    // link5.classList.toggle("opacity-0")
+    // link1.classList.toggle("translate-y-3")
+    // link2.classList.toggle("translate-y-3")
+    // link3.classList.toggle("translate-y-3")
+    // link4.classList.toggle("translate-y-3")
+    // link5.classList.toggle("translate-y-3")
+    // else{
+    //     link1.classList.add("opacity-0", "translate-y-3")
+    // }
+    // delay logic
+    link1.classList.toggle("delay-[0.5s]")
+    link2.classList.toggle("delay-[0.4s]")
+    link3.classList.toggle("delay-[0.3s]")
+    link4.classList.toggle("delay-[0.2s]")
+    link5.classList.toggle("delay-[0.1s]")
+    link1.classList.toggle("delay-[0.1s]")
+    link2.classList.toggle("delay-[0.2s]")
+    link3.classList.toggle("delay-[0.3s]")
+    link4.classList.toggle("delay-[0.4s]")
+    link5.classList.toggle("delay-[0.5s]")
+    // navOpsEl.classList.toggle("hidden")
+    // setTimeout(() =>{
+    //   mobileNavEl.classList.toggle("z-10");
+    // }, 500);
+    // locking the scroll to the mobile nav 
+    body.classList.toggle('overflow-hidden')
+  })
+})
+
 
 // Implementing intersection observer sticky navigation
 // const options = {
@@ -225,6 +329,7 @@ gsap.to(".first", 1.5, {
   onComplete: () => {
     document.querySelector(".overlay").classList.remove("z-[2]");
     document.querySelector(".overlay").classList.add("-z-50");
+    document.querySelector("body").classList.toggle("overflow-hidden")
   },
 });
 gsap.to(".second", 1.5, {

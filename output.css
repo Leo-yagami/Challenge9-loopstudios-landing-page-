@@ -588,6 +588,12 @@ video {
   }
 }
 
+@media (min-width: 1736px) {
+  .container {
+    max-width: 1736px;
+  }
+}
+
 .pointer-events-none {
   pointer-events: none;
 }
@@ -831,8 +837,16 @@ video {
   margin-bottom: 6rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-52 {
+  margin-bottom: 13rem;
 }
 
 .mb-56 {
@@ -951,6 +965,18 @@ video {
   margin-top: 24rem;
 }
 
+.mt-44 {
+  margin-top: 11rem;
+}
+
+.-ml-56 {
+  margin-left: -14rem;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
 .block {
   display: block;
 }
@@ -1045,6 +1071,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .min-h-0 {
@@ -1143,6 +1173,18 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-1 {
@@ -1277,6 +1319,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -1711,12 +1757,20 @@ video {
   padding-bottom: 6rem;
 }
 
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
 
 .pb-48 {
   padding-bottom: 12rem;
+}
+
+.pb-52 {
+  padding-bottom: 13rem;
 }
 
 .pb-56 {
@@ -1847,6 +1901,18 @@ video {
   padding-top: 2rem;
 }
 
+.pr-0 {
+  padding-right: 0px;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
+}
+
+.pt-9 {
+  padding-top: 2.25rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1855,12 +1921,24 @@ video {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .align-middle {
   vertical-align: middle;
 }
 
 .font-\[\'Alata\'\] {
   font-family: 'Alata';
+}
+
+.font-alata {
+  font-family: Alata, sans-serif;
+}
+
+.font-josefin {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .font-sans {
@@ -2391,6 +2469,11 @@ html,body{
     line-height: 1;
   }
 
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .md\:leading-none {
     line-height: 1;
   }
@@ -2585,12 +2668,29 @@ html,body{
     padding-bottom: 3rem;
   }
 
+  .xl\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .xl\:pl-2\.5 {
     padding-left: 0.625rem;
   }
 
   .xl\:pr-24 {
     padding-right: 6rem;
+  }
+
+  .xl\:pt-8 {
+    padding-top: 2rem;
+  }
+
+  .xl\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
+  .xl\:pt-9 {
+    padding-top: 2.25rem;
   }
 
   .xl\:text-left {
@@ -2610,6 +2710,11 @@ html,body{
     font-size: 5rem;
   }
 
+  .xl\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
   .xl\:leading-7 {
     line-height: 1.75rem;
   }
@@ -2623,5 +2728,111 @@ html,body{
   .\32xl\:mx-\[18rem\] {
     margin-left: 18rem;
     margin-right: 18rem;
+  }
+
+  .\32xl\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
+  }
+
+  .\32xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1736px) {
+  .\33xl\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .\33xl\:mt-44 {
+    margin-top: 11rem;
+  }
+
+  .\33xl\:-ml-56 {
+    margin-left: -14rem;
+  }
+
+  .\33xl\:mr-20 {
+    margin-right: 5rem;
+  }
+
+  .\33xl\:mr-0 {
+    margin-right: 0px;
+  }
+
+  .\33xl\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .\33xl\:h-10 {
+    height: 2.5rem;
+  }
+
+  .\33xl\:w-1\/2 {
+    width: 50%;
+  }
+
+  .\33xl\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .\33xl\:max-w-\[32rem\] {
+    max-width: 32rem;
+  }
+
+  .\33xl\:max-w-\[36rem\] {
+    max-width: 36rem;
+  }
+
+  .\33xl\:max-w-3xl {
+    max-width: 48rem;
+  }
+
+  .\33xl\:max-w-4xl {
+    max-width: 56rem;
+  }
+
+  .\33xl\:max-w-2xl {
+    max-width: 42rem;
+  }
+
+  .\33xl\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .\33xl\:items-start {
+    align-items: flex-start;
+  }
+
+  .\33xl\:items-center {
+    align-items: center;
+  }
+
+  .\33xl\:justify-center {
+    justify-content: center;
+  }
+
+  .\33xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .\33xl\:pr-0 {
+    padding-right: 0px;
+  }
+
+  .\33xl\:text-right {
+    text-align: right;
+  }
+
+  .\33xl\:text-\[3\.5rem\] {
+    font-size: 3.5rem;
+  }
+
+  .\33xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

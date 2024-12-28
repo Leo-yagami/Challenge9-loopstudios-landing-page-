@@ -12,12 +12,9 @@
       href="./images/favicon-32x32.png"
     />
     <!-- Importing fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./output.css" />
     <title>Frontend Mentor | Loopstudios landing page</title>
@@ -33,7 +30,7 @@
       }
     </style>
   </head>
-  <body class="relative">
+  <body class="relative overflow-hidden">
     <main class="scroll-Area min-h-screen">
       <div>
         <!-- We want a counter element which is going to be a simple h1 -->
@@ -45,14 +42,15 @@
          </div>
       </div>
       <!-- Hero section -->
-      <section href=""
-        class="sec bg-[url('./images/mobile/image-hero.jpg')] md:bg-[url('./images/desktop/image-hero.jpg')] bg-cover bg-center xl:bg-center xl:bg-cover pb-56 pt-8 md:pt-12"
+      <section href="#"
+        class="sec bg-[url('./images/mobile/image-hero.jpg')] md:bg-[url('./images/desktop/image-hero.jpg')] bg-cover bg-center xl:bg-center xl:bg-cover pt-8 md:pt-12"
       >
       <!-- ///////////////////// -->
         <!-- Navbar section -->
+         <!-- <h1 class="font-['Josefin Sanss']">HIIIIIIIIIIIIIIIIIIIIIII</h1> -->
           <div class="navigation flex items-center py-4 lg:py-6 justify-between px-6 sm:px-10 xl:px-[10.5rem] transition-all duration-500">
-            <img src="./images/logo.svg" alt="" class="h-7 md:h-8 z-20" />
-            <nav class="text-white space-x-3 md:space-x-5 md:mr-1 hidden md:block font-bold">
+            <img src="./images/logo.svg" alt="" class="h-7 md:h-8 3xl:h-10 z-20" />
+            <nav class="text-white 3xl:text-lg space-x-3 md:space-x-5 md:mr-1 hidden md:block font-alata">
               <a href="#about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
               <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
               <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Events</a>
@@ -99,7 +97,7 @@
         <!-- //////////////////////// -->
         <!-- Hero content -->
         <div id="about"
-          class="mt-40 text-white text-[2.5rem] sm:text-[3.5rem] leading-10 sm:leading-tight mx-2 md:text-7xl xl:text-[5rem] py-6 pl-7  pr-10 md:pr-32 xl:pr-24 md:pl-9  md:leading-none  uppercase border-2 border-white font-['Josefin Sans'] font-light inline-block mx-6 sm:mx-10 xl:mx-[10.5rem] transition-all duration-500"
+          class="mt-36 mb-32 text-white text-[2.5rem] sm:text-[3.5rem] leading-10 sm:leading-tight md:text-6xl xl:text-7xl xl:pt-9 py-6 pl-7 pr-7 md:pr-32 xl:pr-24 md:pl-9 md:leading-none uppercase border-2 border-white font-josefin font-light inline-block mx-6 sm:mx-10 xl:mx-[10.5rem] transition-all duration-500"
         >
           <h1 class="">Immersive<br> experiences<br> that deliver</h1>
         </div>
@@ -109,24 +107,24 @@
 
 
       <!-- Description section -->
-      <section id="career" class="px-6 sm:px-10 xl:px-[10.5rem] mt-24 xl:flex xl:items-center xl:justify-between">
+      <section id="career" class="px-6 sm:px-10 xl:px-[10.5rem] mt-24 xl:flex xl:items-center xl:justify-between 3xl:justify-center">
         <!-- Main Image -->
         <img
           src="./images/mobile/image-interactive.jpg"
           alt="Wannabe T-rex man wearing a vr headset "
-          class="mx-auto xl:mx-0 xl:min-w-[750px] "
+          class="mx-auto xl:mx-0 xl:min-w-[750px] 3xl:w-1/2"
         />
         <!-- Heading -->
-         <div class="xl:min-w-max xl:bg-white xl:px-20 xl:py-12 xl:-ml-44 xl:mt-60">
+         <div class="xl:min-w-max xl:bg-white xl:px-20 xl:py-12 xl:-ml-44 xl:mt-60 3xl:px-16 3xl:mt-44">
           
            <h2
-             class="mt-8 text-center tracking-normal xl:tracking-wide text-4xl xl:text-5xl font-['Josefin Sans'] uppercase font-light xl:max-w-md xl:text-left xl:pl-2.5"
+             class="mt-8 text-center tracking-normal xl:tracking-wide text-4xl xl:text-5xl font-josefin uppercase font-light xl:max-w-md xl:text-left xl:pl-2.5 3xl:text-[3.5rem] 3xl:max-w-xl"
            >
              The leader in interactive VR
            </h2>
            <!-- Description -->
            <p
-             class="mt-7 xl:mt-6 pl-2 text-center font-['Alata'] font-normal text-[#8c8c8c] bg-opa lg:mx-auto xl:max-w-[28rem] xl:text-left xl:leading-7 xl:text-[15px]"
+             class="mt-7 xl:mt-6 pl-2 text-center font-alata text-[#8c8c8c] lg:mx-auto xl:max-w-[28rem] xl:text-left xl:leading-7 xl:text-[15px] 3xl:text-lg 3xl:mx-0 3xl:max-w-[32rem]"
            >
              Founded in 2011, Loopstudios has been producing world-class virtual
              reality projects for some of the best companies around the globe. Our
@@ -290,7 +288,7 @@
         <div class="space-y-8 xl:space-y-6">
           <img src="./images/logo.svg" alt="" class="h-7 md:h-8" />
           <nav
-            class="flex flex-col gap-4 items-center text-[rgba(255,255,255,0.90)] xl:flex-row"
+            class="flex flex-col gap-4 items-center text-[rgba(255,255,255,0.90)] xl:flex-row font-['Josefin Sans'] font-normal"
           >
             <a href="#about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
             <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
@@ -301,7 +299,7 @@
         </div>
         <!-- Group 2: social links and copyright statement -->
         <div class="space-y-4 xl:space-y-6">
-          <div class="flex gap-4 justify-center xl:justify-end">
+          <div class="flex gap-4 justify-center xl:justify-end font-['Josefin Sans']">
             <a href="https://x.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
               <img src="./images/icon-facebook.svg"  alt="" />
             </a>
@@ -315,7 +313,7 @@
               <img src="./images/icon-instagram.svg"  alt="" />
             </a>
           </div>
-          <p class="text-[#696969]">© 2021 Loopstudios. All rights reserved.</p>
+          <p class="text-[#696969] ">© 2021 Loopstudios. All rights reserved.</p>
         </div>
       </section>
       <!-- <div class="preloader w-full h-full bg-black"></div> -->
