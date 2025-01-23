@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.first {
+    /* position: fixed; */
+    width: 100vw;
+    /* height: 105vh; */
+    transform: translateY(0);
+    background: #1a1a1a;
+    /* z-index: 400; */
+}
+
+.second {
+    /* position: fixed; */
+    transform: translateX(0);
+    height: 105vh;
+    background: white;
+    /* z-index: 300; */
+}
+
+.counter {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #bcbcc4;
+    padding: 0.2em 0.4em;
+    font-size: 20vh;
+    font-family: "Alanta";
+}

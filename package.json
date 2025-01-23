@@ -1,0 +1,19 @@
+{
+  "name": "challenge9_loopstudios",
+  "version": "1.0.0",
+  "description": "Second landing page using tailwindcss, frontend mentor challenge(junior difficulty)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./input/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./input/input.css -o ./dist/output.css --watch"
+  },
+  "author": "Haitham Abdulhamid",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.11"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "imagesloaded": "^5.0.0"
+  }
+}
