@@ -42,7 +42,7 @@
          </div>
       </div>
       <!-- Hero section -->
-      <section href="#"
+      <section
         class="sec bg-[url('./design/images/mobile/image-hero.jpg')] md:bg-[url('./design/images/desktop/image-hero.jpg')] bg-cover bg-center xl:bg-center xl:bg-cover pt-8 md:pt-12"
       >
       <!-- ///////////////////// -->
@@ -51,7 +51,7 @@
           <div class="navigation flex items-center py-4 lg:py-6 justify-between px-6 sm:px-10 xl:px-[10.5rem] transition-all duration-500">
             <img src="./design/images/logo.svg" alt="" class="h-7 md:h-8 3xl:h-10 z-20" />
             <header>
-              <nav class="text-white 3xl:text-lg space-x-3 md:space-x-5 md:mr-1 hidden md:block font-alata">
+              <nav aria-label="Primary navigation" class="text-white 3xl:text-lg space-x-3 md:space-x-5 md:mr-1 hidden md:block font-alata">
                 <a href="#about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
                 <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
                 <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Events</a>
@@ -62,7 +62,7 @@
             <!-- Hamburger Button(must be turned off on deskop) -->
             <div class="z-20 block md:hidden">
               <button class="buttonSwitcher hamburger cursor-pointer group">
-                <div class="grid justify-items-center gap-1.5 pb-4 ">
+                <span class="grid justify-items-center gap-1.5 pb-4 ">
                   <span
                     class="span1 transition duration-500 ease-out w-7 h-0.5 rounded-md bg-white"
                   ></span>
@@ -72,7 +72,7 @@
                   <span
                     class="span3 transition duration-500 ease-out w-7 h-0.5 rounded-md bg-white"
                   ></span>
-                </div>
+                </span>
               </button>
             </div>
           <!-- //////////////////////// -->
@@ -83,7 +83,7 @@
             class="mobileNav navOps transition-all duration-700 absolute left-0 w-screen h-0 bg-black px-6 delay-500 md:hidden z-10"
           >
             <nav
-              class="links text-white space-y-6 text-3xl flex flex-col mt-64 font-['Josefin Sans'] font-light uppercase sm:pl-4"
+            aria-label="Mobile navigation" class="links text-white space-y-6 text-3xl flex flex-col mt-64 font-['Josefin Sans'] font-light uppercase sm:pl-4"
             >
               <a href="#about" class="link1 hidden opacity-0 translate-y-3 delay-[0.5s] duration-300">About</a>
               <a href="#career" class="link2 hidden opacity-0 translate-y-3 delay-[0.4s] duration-300">Careers</a>
@@ -293,7 +293,7 @@
         <div class="space-y-8 xl:space-y-6">
           <img src="./design/images/logo.svg" alt="" class="h-7 md:h-8" />
           <nav
-            class="flex flex-col gap-4 items-center text-[rgba(255,255,255,0.90)] xl:flex-row font-['Josefin Sans'] font-normal"
+          aria-label="Footer navigation" class="flex flex-col gap-4 items-center text-[rgba(255,255,255,0.90)] xl:flex-row font-['Josefin Sans'] font-normal"
           >
             <a href="#about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
             <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
