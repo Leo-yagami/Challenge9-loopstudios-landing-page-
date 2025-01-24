@@ -50,13 +50,15 @@
          <!-- <h1 class="font-['Josefin Sanss']">HIIIIIIIIIIIIIIIIIIIIIII</h1> -->
           <div class="navigation flex items-center py-4 lg:py-6 justify-between px-6 sm:px-10 xl:px-[10.5rem] transition-all duration-500">
             <img src="./design/images/logo.svg" alt="" class="h-7 md:h-8 3xl:h-10 z-20" />
-            <nav class="text-white 3xl:text-lg space-x-3 md:space-x-5 md:mr-1 hidden md:block font-alata">
-              <a href="#about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
-              <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
-              <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Events</a>
-              <a href="#creations" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Products</a>
-              <a href="#footer" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Support</a>
-            </nav>
+            <header>
+              <nav class="text-white 3xl:text-lg space-x-3 md:space-x-5 md:mr-1 hidden md:block font-alata">
+                <a href="#about" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">About</a>
+                <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Careers</a>
+                <a href="#career" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Events</a>
+                <a href="#creations" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Products</a>
+                <a href="#footer" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-1/2 after:h-0.5 after:-bottom-2 after:left-1/4">Support</a>
+              </nav>
+            </header>
             <!-- Hamburger Button(must be turned off on deskop) -->
             <div class="z-20 block md:hidden">
               <button class="buttonSwitcher hamburger cursor-pointer group">
@@ -150,7 +152,7 @@
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:from-[rgba(0,0,0,0.7)] after:to-transparent">
               <picture class="w-full">
                 <source srcset="./design/images/desktop/image-deep-earth.jpg" media="(min-width: 1024px)">
-                <img src="./design/images/mobile/image-deep-earth.jpg" class="duration-300 group-hover:scale-105"  alt="" />
+                <img src="./design/images/mobile/image-deep-earth.jpg" class="duration-300 group-hover:scale-105"  alt="gallery-image" />
               </picture>
             </div>
             <!-- Threshold concept -->
@@ -165,7 +167,7 @@
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
               <Picture class="w-full`">
                 <source srcset="./design/images/desktop/image-night-arcade.jpg" media="(min-width: 1024px)">
-                <img src="./design/images/mobile/image-night-arcade.jpg" class="duration-300 group-hover:scale-105" alt="" />
+                <img src="./design/images/mobile/image-night-arcade.jpg" class="duration-300 group-hover:scale-105" alt="gallery-image" />
               </Picture>
             </div>
             <div
@@ -181,7 +183,7 @@
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 ] after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
               <Picture class="w-full`">
                 <source srcset="./design/images/desktop/image-soccer-team.jpg" media="(min-width: 1024px)">
-                <img src="./design/images/mobile/image-soccer-team.jpg" class="duration-300 group-hover:scale-105" alt="" />
+                <img src="./design/images/mobile/image-soccer-team.jpg" class="duration-300 group-hover:scale-105" alt="gallery-image" />
               </Picture>
             </div>
             <div
@@ -196,7 +198,7 @@
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
               <Picture class="w-full`">
                 <source srcset="./design/images/desktop/image-grid.jpg" media="(min-width: 1024px)"> 
-                <img src="./design/images/mobile/image-grid.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+                <img src="./design/images/mobile/image-grid.jpg"  class="duration-300 group-hover:scale-105"alt="gallery-image" />
               </Picture>
             </div>
             <div
@@ -211,7 +213,7 @@
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
             <Picture class="w-full`">
               <source srcset="./design/images/desktop/image-from-above.jpg" media="(min-width: 1024px)">
-              <img src="./design/images/mobile/image-from-above.jpg" class="duration-300 group-hover:scale-105 alt=" />
+              <img src="./design/images/mobile/image-from-above.jpg" class="duration-300 group-hover:scale-105 alt="image from above" />
   </Picture>  
             </div>
             <div
@@ -227,7 +229,7 @@
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
               <Picture class="w-full`">
                 <source srcset="./design/images/desktop/image-pocket-borealis.jpg" media="(min-width: 1024px)">
-                <img src="./design/images/mobile/image-pocket-borealis.jpg" class="duration-300 group-hover:scale-105" alt="" /></Picture>
+                <img src="./design/images/mobile/image-pocket-borealis.jpg" class="duration-300 group-hover:scale-105" alt="gallery-image" /></Picture>
 
             </div>
             <div
@@ -242,7 +244,7 @@
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
             <Picture class="w-full`">
               <source srcset="./design/images/desktop/image-curiosity.jpg" media="(min-width: 1024px)">
-              <img src="./design/images/mobile/image-curiosity.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+              <img src="./design/images/mobile/image-curiosity.jpg"  class="duration-300 group-hover:scale-105"alt="gallery-image" />
      </Picture>  
             </div>
             <div
@@ -257,7 +259,7 @@
             <div class="overflow-hidden group-hover:bg-white after:absolute after:content-[''] after:w-full after:h-full after:top-0 after:left-0 after:bg-gradient-to-r after:lg:bottom-0 after:lg:right-0 after:lg:bg-gradient-to-t after:from-[rgba(0,0,0,0.7)] after:to-transparent">
             <Picture class="w-full`">
               <source srcset="./design/images/desktop/image-fisheye.jpg" media="(min-width: 1024px)">
-              <img src="./design/images/mobile/image-fisheye.jpg"  class="duration-300 group-hover:scale-105"alt="" />
+              <img src="./design/images/mobile/image-fisheye.jpg"  class="duration-300 group-hover:scale-105"alt="gallery-image" />
      </Picture>  
             </div>
             <div
@@ -304,16 +306,16 @@
         <div class="space-y-4 xl:space-y-6">
           <div class="flex gap-4 justify-center xl:justify-end font-['Josefin Sans']">
             <a href="https://facebook.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
-              <img src="./design/images/icon-facebook.svg"  alt="" />
+              <img src="./design/images/icon-facebook.svg"  alt="social links" />
             </a>
             <a href="https://x.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
-              <img src="./design/images/icon-twitter.svg" alt="" />
+              <img src="./design/images/icon-twitter.svg" alt="social links" />
             </a>
             <a href="https://pinterest.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
-              <img src="./design/images/icon-pinterest.svg" alt="" />
+              <img src="./design/images/icon-pinterest.svg" alt="social links" />
             </a>
             <a href="https://instagram.com" class="relative group after:duration-300 after:absolute after:content-[''] after:bg-white after:w-0 after:hover:w-full after:h-0.5 after:-bottom-2 after:left-0">
-              <img src="./design/images/icon-instagram.svg"  alt="" />
+              <img src="./design/images/icon-instagram.svg"  alt="social links" />
             </a>
           </div>
           <p class="text-[#696969] ">© 2021 Loopstudios. All rights reserved.</p>
