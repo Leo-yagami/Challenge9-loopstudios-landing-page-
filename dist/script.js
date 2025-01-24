@@ -18,6 +18,7 @@ const linksArr = [link1, link2, link3, link4, link5];
 
 hamburgerEl.addEventListener("click", (event) => {
   console.log("clicked");
+  console.log(spanEl1, spanEl2, spanEl3)
   console.log(event)
   // hamburgerEl.classList.toggle("hamburger");
   // hamburgerEl.classList.toggle("close");
