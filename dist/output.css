@@ -1718,6 +1718,10 @@ html,body{
     margin-top: 11rem;
   }
 
+  .lg\:mt-\[5\.2rem\] {
+    margin-top: 5.2rem;
+  }
+
   .lg\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
